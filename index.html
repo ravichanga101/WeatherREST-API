@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Get Weather Info</title>
+  </head>
+  <body>
+    <div class="app">
+      <header>Ajax Weather Info</header>
+
+      <section class="quotes">
+        Enter City Name:
+        <input type="text" id="id_city_name" name="city_name" />
+        <br /><br /><br /><br />
+        Temp is :
+        <div class="quote-text" id="js-quote-text">****</div>
+      </section>
+
+      <div id="js-spinner" class="spinner hidden">
+        <img src="./images/ajax-loader.gif" />
+      </div>
+
+      <section class="controls">
+        <button type="button" id="js-new-quote" class="new-quote button">
+          Get Weather Info
+        </button>
+      </section>
+    </div>
+
+    <script src="load_ajax_jquery.js"></script>
+  </body>
+</html>
